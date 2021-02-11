@@ -180,3 +180,7 @@ if os.path.exists("config.jsonnet"):
 
 
 INSTALLED_APPS = INSTALLED_APPS + MODULES
+BASEURL = 'https://decide-test.herokuapp.com/'
+APIS = {}
+import django_heroku
+django_heroku.settings(locals())
